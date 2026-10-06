@@ -1,0 +1,33 @@
+{
+    "name": "イープラス",
+    "short_name": "イープラス",
+    "start_url": "/epl/tickets/8a6e2443-d847-4844-9448-9a75f278def5/",
+    "scope": "/epl/tickets/8a6e2443-d847-4844-9448-9a75f278def5/",
+    "id": "/epl/tickets/8a6e2443-d847-4844-9448-9a75f278def5/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+        {
+            "src": "/icon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/icon/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ]
+}
