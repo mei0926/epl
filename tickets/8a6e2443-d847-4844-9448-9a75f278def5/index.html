@@ -47,6 +47,33 @@
                 min-height: 100dvh;
                 display: flex
             }
+
+            /* ===== Date mode control ===== */
+
+/* SINGLEのときmultiだけ隠す */
+[data-date-mode="single"] [data-role="event-date-multi"] {
+    display: none !important;
+}
+
+/* SINGLE表示 */
+[data-date-mode="single"] [data-role="event-year"],
+[data-date-mode="single"] [data-role="event-date-single"],
+[data-date-mode="single"] [data-role="event-times"],
+[data-date-mode="single"] [data-role="event-time-open"],
+[data-date-mode="single"] [data-role="event-time-start"] {
+    display: revert;
+}
+
+/* MULTIのときsingle関連を隠す */
+[data-date-mode="multi"] [data-role="event-year"],
+[data-date-mode="multi"] [data-role="event-date-single"] {
+    display: none !important;
+}
+
+/* MULTI表示 */
+[data-date-mode="multi"] [data-role="event-date-multi"] {
+    display: revert;
+}
         </style>
     </head>
     <body class="min-h-full eplus-ticket-body">
@@ -79,22 +106,22 @@
                     <div class="main" data-astro-cid-22ov4m7o>
                         <section class="event-card" data-astro-cid-22ov4m7o>
                             <div class="content" data-role="event-card-content" data-date-mode="single" data-astro-cid-22ov4m7o>
-                                <div class="year" data-role="event-year" hidden data-astro-cid-22ov4m7o>
+                                <div class="year" data-role="event-year" data-astro-cid-22ov4m7o>
                                     <span data-astro-cid-22ov4m7o>2026年</span>
                                 </div>
                                 <div class="date-time" data-role="event-date-single" data-astro-cid-22ov4m7o>
                                     <p class="date" data-astro-cid-22ov4m7o>
                                         <span class="mmdd number" data-astro-cid-22ov4m7o>10/10</span>
                                         <span class="weekday" data-astro-cid-22ov4m7o>(<span class="sat" data-astro-cid-22ov4m7o>土</span>)</span></p>
-                                    <p class="times number" data-role="event-times" hidden data-astro-cid-22ov4m7o>
-                                        <span class="time open" data-role="event-time-open" hidden data-astro-cid-22ov4m7o>
+                                    <p class="times number" data-role="event-times" data-astro-cid-22ov4m7o>
+                                        <span class="time open" data-role="event-time-open" data-astro-cid-22ov4m7o>
                                             <span class="value" data-astro-cid-22ov4m7o>
                                                 <span data-astro-cid-22ov4m7o>10</span>
                                                 :<span data-astro-cid-22ov4m7o>00</span>
                                             </span>
                                             <span data-astro-cid-22ov4m7o>開場</span>
                                         </span>
-                                        <span class="time start" data-role="event-time-start" hidden data-astro-cid-22ov4m7o>
+                                        <span class="time start" data-role="event-time-start" data-astro-cid-22ov4m7o>
                                             <span class="value" data-astro-cid-22ov4m7o>
                                                 <span data-astro-cid-22ov4m7o>11</span>
                                                 :<span data-astro-cid-22ov4m7o>30</span>
@@ -103,7 +130,7 @@
                                         </span>
                                     </p>
                                 </div>
-                                <div class="multidays" data-role="event-date-multi" hidden data-astro-cid-22ov4m7o>
+                                <div class="multidays" data-role="event-date-multi" data-astro-cid-22ov4m7o>
                                     <p data-astro-cid-22ov4m7o><span class="multi-start" data-astro-cid-22ov4m7o>10/3<span class="weekday" data-astro-cid-22ov4m7o>(<span class="sat" data-astro-cid-22ov4m7o>土</span>)</span></span>〜<span class="multi-end" data-astro-cid-22ov4m7o>10/4<span class="weekday" data-astro-cid-22ov4m7o>(<span class="sun" data-astro-cid-22ov4m7o>日</span>)</span></span></p>
                                 </div>
                                 <div class="title" data-astro-cid-22ov4m7o>
