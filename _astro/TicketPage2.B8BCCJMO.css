@@ -501,7 +501,7 @@
 }
 
 .preview-frame[data-astro-cid-z4ui56x3] .mogiri-caution-text[data-astro-cid-z4ui56x3] {
-    color: #eb519b;
+    color: red;
     text-align: center;
     background-color: #fcff00;
     border-radius: 5px;
